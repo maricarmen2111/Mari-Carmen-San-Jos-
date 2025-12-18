@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio Mari Carmen</title>
+	<link href="lightbox2-2.11.3/src/css/lightbox.css" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/ad2eb12747.js" crossorigin="anonymous"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Momo+Signature&family=Pacifico&family=Permanent+Marker&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		
+
+		body{
+			margin: 0;
+		}
+
+		*{
+			box-sizing: border-box;
+		}
+
+		hr{
+			border: 2px solid #7C0101;
+			margin: 0;
+		}
+
+		p, label, a{
+			font-family: "Quicksand", sans-serif;
+		}
+
+		h1{
+			font-family: "Permanent Marker", cursive;
+			font-size: 80px;
+			padding: 40px 0;
+		}
+
+		/*HEADER*/
+
+		header{
+			background-image: url('modelado y color/flor/floraguaarriba.jpg');
+			height: 100vh;
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center center;
+		}
+
+		.panelfijo{
+			background-color: rgba(124, 1, 1, 1);
+			height: 10vh;
+			width: 100%;
+			padding: 5px 15px;
+			position: fixed;
+			z-index: 99;
+		}
+
+		.imagenheader{
+			height: 10vh;
+			/*width: 8vw;*/
+		}
+
+		.menu{
+			float: right;
+			font-size: 40px;
+			margin-right: 20px;
+			margin-top: 10px;
+		}
+
+		header a{
+			color: white;
+			text-decoration: none;
+			margin-left: 20px;
+			font-family: "Amatic SC", sans-serif;
+		}
+
+		a:hover{
+			color: #B8B8B8;
+			text-decoration: underline;
+		}
+
+
+
+		/*PRIMERA SECCION*/
+
+		.seccion1{
+			background-image: url('Imágenes para fondo/fondoordenador.jpg');
+			width: 100%;
+			height: 60vh;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		
+		/*SEGUNDA SECCION*/
+
+		.seccion2{
+			height: auto;
+			width: 100%;
+			background-image: url('Imágenes para fondo/fondo con textura1.jpg');
+			padding-bottom: 10px;
+		}
+
+		.seccion2 h1{
+			margin: 0;
+			color: #7C0101;
+			text-align: center;
+			/*font-size: 80px;*/
+			/* padding: 40px 0; */
+		}
+
+		.seccion2 div{
+			display: flex;
+			/*flex-wrap: wrap;*/
+		}
+
+		.seccion2 img{
+			width: 50vw;
+			height: 50vh;
+			margin: 10px;
+			margin-left: 20px;
+		}
+
+		.textoseccion2{
+			flex-grow: 1;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0 20px;
+			/*width: 50%;*/
+			/**flex-direction: column;*/
+		}
+
+		.textoseccion2 p{
+			/*flex-grow: 1;*/
+			font-size: 26px;
+			text-align: left;
+			margin: 0;
+		}
+
+		.textoseccion2 img{
+			width: 90px;
+			height: auto;
+		}
+
+
+		/*TERCERA SECCION*/
+
+		.seccion3{
+			background-image: url('Imágenes para fondo/fondogranate.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+
+		.seccion3 p{
+			color: white;
+		}
+
+		.title{
+		    text-align: center;
+		    /*margin-top: 80px;*/
+		    color:  white;
+		    margin: 0;
+			font-size: 80px;
+			/* padding: 40px 0; */
+		}
+
+		.container__slider{
+		    max-width: 1000px;
+		    height: 500px;
+		    margin: auto;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    padding: 30px 10px;
+		}
+
+		.seccion3 a{
+			color: white;
+			text-decoration: none;
+		}
+
+		.seccion3 a:hover{
+			color: #B8B8B8;
+			text-decoration: underline;
+		}
+
+		/*.card{
+			position: relative;
+			display: inline-block;
+		}*/
+		.card img{
+			display: block;
+		}
+
+		.card button{
+			position: absolute;
+			text-align: center;
+			width: 140px;
+			height: 60px;
+			color: #7C0101;
+			font-size: 20px;
+			border-radius: 40px;
+			border: 1px solid #7C0101;
+			background-color: rgba(164, 162, 162, 0.8);
+		}
+
+		input[type=radio]{
+		    display: none;
+		}
+
+		.container{
+		    width: 100%;
+		    /*max-width: 800px;*/
+		    height: 100%;
+		    /*max-height: 600px;*/
+		    transform-style: preserve-3d;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		}
+
+		.cards{
+		    position: relative;
+		    width: 100%;
+		    height: 100%;
+		}
+
+		.card{
+		    position: absolute;
+		    width: 60%;
+		    height: 100%;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+		    cursor: pointer;
+		    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		}
+
+		.card img/*, .card iframe*/{
+		    width: 100%;
+		    height: 100%;
+		    border-radius: 10px;
+		    /*-o-object-fit: cover;
+		    object-fit: cover;*/
+		}
+
+
+		#item-2:checked ~ .cards #selector-1,
+		#item-1:checked ~ .cards #selector-3,
+		#item-3:checked ~ .cards #selector-2{
+		    transform: translateX(-40%) scale(0.8);
+		    opacity: 0.6;
+		    z-index: 0;
+		}
+
+		#item-3:checked ~ .cards #selector-1,
+		#item-1:checked ~ .cards #selector-2,
+		#item-2:checked ~ .cards #selector-3{
+		    transform: translateX(40%) scale(0.8);
+		    opacity: 0.6;
+		    z-index: 0;
+		}
+
+		#item-1:checked ~ .cards #selector-1,
+		#item-2:checked ~ .cards #selector-2,
+		#item-3:checked ~ .cards #selector-3{
+		    transform: translateX(0) scale(1);
+		    z-index: 1;
+		}
+
+		.card p{
+			font-size: 30px;
+		}
+
+		/*CUARTA SECCION*/
+		.seccion4{
+			width: 100%;
+			height: auto;
+			background-image: url('Imágenes para fondo/fondobeige.jpg');
+			padding-bottom: 20px;
+		}
+
+		.seccion4 div{
+			width: 80%;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+		}
+
+		.seccion4 iframe, .seccion4 img{
+			width: 250px;
+			height: 150px;
+			padding: 5px;
+		}
+
+		.seccion4 h1{
+			margin: 0;
+			color: #7C0101;
+			text-align: center;
+			/*font-size: 80px;*/
+			/* padding: 40px 0; */
+		}
+
+
+		/*QUINTA SECCION*/
+		.seccion5{
+			width: 100%;
+			height: auto;
+			background-image: url('Imágenes para fondo/fondobeige.jpg');
+			padding-bottom: 20px;
+		}
+
+		.seccion5 div{
+			width: 80%;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+		}
+
+		.seccion5 iframe, .seccion5 img{
+			width: 250px;
+			height: 350px;
+			padding: 5px;
+		}
+
+		.seccion5 .imagenes{
+			width: 250px;
+			height: 180px;
+		}
+
+		.seccion5 h1{
+			margin: 0;
+			color: #7C0101;
+			text-align: center;
+			/*font-size: 80px;*/
+			/* padding: 40px 0; */
+		}
+
+
+		/*SEXTA SECCION*/
+		.seccion6{
+			width: 100%;
+			height: auto;
+			background-image: url('Imágenes para fondo/fondobeige.jpg');
+			padding-bottom: 20px;
+		}
+
+		.seccion6 div{
+			width: 80%;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+		}
+
+		.seccion6 iframe, .seccion6 img{
+			width: 250px;
+			height: 150px;
+			padding: 5px;
+		}
+
+		.seccion6 h1{
+			margin: 0;
+			color: #7C0101;
+			text-align: center;
+			/*font-size: 80px;*/
+			/* padding: 40px 0; */
+		}
+
+
+		/*FOOTER*/
+		footer{
+			background-color: #5E0202;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			font-size: 20px;
+			text-align: center;
+		}
+
+		.separacionfooter{
+			border: 1px solid white;
+			width: 800px;
+			margin: 20px 0;
+		}
+
+		.formulario{
+			width: 300px;
+			height: 40px;
+			font-size: 15px;
+			border-radius: 20px;
+			border: 1px  solid #2E0101;
+			background-color: rgba(46, 1, 1, 0.6);
+			color: rgba(254, 254, 254, 0.5);
+			padding-left: 20px;
+		}
+
+		i{
+			font-size: 30px;
+			width: 60px;
+			padding: 10px 0;
+			text-align: center;
+		}
+
+		.boton{
+			width: 100px;
+			height: 30px;
+			font-size: 15px;
+			border-radius: 20px;
+			border: 2px  solid #330101;
+			background-color: rgba(60, 1, 1, 0.8);
+			color: rgba(254, 254, 254, 1);
+		} 
+
+		.boton:hover{
+			background-color: rgba(90, 1, 1, 1);
+			color: rgba(114, 114, 114, 1);
+		}
+
+		#vehicle1, #vehicle2{
+			width: 50px;
+		}
+
+		footer a{
+			color: white;
+			text-decoration: none;
+		}
+
+
+		/*PUNTO MEDIO ORDENADOR-TABLET*/
+
+		@media (max-width: 1250px){
+
+			.seccion4 iframe, .seccion4 img{
+				width: 200px;
+				height: 120px;
+			}
+
+			.seccion5 iframe, .seccion5 img{
+			width: 200px;
+			height: 280px;
+			}
+
+			.seccion5 .imagenes{
+				width: 200px;
+				height: 140px;
+			}
+
+			.seccion6 iframe, .seccion6 img{
+				width: 200px;
+				height: 120px;
+			}
+
+			h1{
+				font-size: 60px;
+			}
+
+		}
+
+		@media (max-width: 1000px){
+
+			.seccion4 iframe, .seccion4 img{
+				width: 180px;
+				height: 110px;
+			}
+
+			.seccion5 iframe, .seccion5 img{
+			width: 180px;
+			height: 260px;
+			}
+
+			.seccion5 .imagenes{
+				width: 180px;
+				height: 120px;
+			}
+
+			.seccion6 iframe, .seccion6 img{
+				width: 180px;
+				height: 110px;
+			}
+
+		}
+
+		/*RESPONSIVE TABLET*/	
+
+		@media (max-width: 950px){
+
+			h1{
+				font-size: 40px;
+			}
+
+			/*HEADER*/
+
+			.menu{
+				font-size: 35px;
+				margin-top: 14px;
+			}
+
+			/*PRIMERA SECCION*/
+
+			.seccion1{
+				background-image: url('Imágenes para fondo/fondo-para-tablet.png');
+			}
+
+
+			/*SEGUNDA SECCION*/
+
+			.seccion2 img{
+				width: 280px;
+				height: 300px;
+			}
+
+			.textoseccion2 p{
+				font-size: 20px;
+			}
+
+			.textoseccion2 img{
+				width: 50px;
+				height: auto;
+			}
+
+			/*TERCERA SECCION*/
+
+			.title{
+				font-size: 40px;
+			}
+
+			.container__slider{
+				max-width: 700px;
+				height: 350px;
+			}
+
+			.card button{
+				width: 110px;
+				height: 40px;
+			}
+
+			.card p{
+				font-size: 20px;
+			}
+
+			/*OTRAS SECCIONES*/
+
+			.seccion4 iframe, .seccion4 img{
+				width: 190px;
+				height: 120px;
+			}
+
+			.seccion5 iframe, .seccion5 img{
+			width: 190px;
+			height: 270px;
+			}
+
+			.seccion5 .imagenes{
+				width: 190px;
+				height: 130px;
+			}
+
+			.seccion6 iframe, .seccion6 img{
+				width: 190px;
+				height: 120px;
+			}
+
+			/*FOOTER*/
+
+			footer{
+				font-size: 15px;
+			}
+
+			.separacionfooter{
+				width: 500px;
+				height: ;
+			}
+
+			.formulario{
+				width: 250px;
+				height: 30px;
+			}
+
+			i{
+				font-size: 25px;
+				/*width: 300px;*/
+			}
+
+			.boton{
+				width: 80px;
+				height: 25px;
+			}
+		}
+
+		/*PUNTO MEDIO TABLET-MOVIL*/
+
+		@media (max-width: 714px){
+
+			h1{
+				padding: 20px 0; 
+				padding-top: 20px;
+			}
+			
+
+			/*HEADER*/
+
+			.menu{
+				font-size: 28px;
+				margin-top: 18px;
+			}
+
+			/*SEGUNDA SECCION*/
+
+			.seccion2 img{
+				width: 400px;
+				height: 420px;
+			}
+
+			.seccion2 div{
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.textoseccion2 p{
+				font-size: 15px;
+			}
+
+			.textoseccion2 img{
+				width: 40px;
+				height: auto;
+			}
+
+			/*TERCERA SECCION*/
+
+			.container__slider{
+				max-width: 550px;
+				height: 275px;
+			}
+
+			.card button{
+				width: 90px;
+				height: 30px;
+				font-size: 15px;
+			}
+
+			.card p{
+				font-size: 15px;
+			}
+
+			/*OTRAS SECCIONES*/
+
+			.seccion4 iframe, .seccion4 img{
+				width: 170px;
+				height: 110px;
+			}
+
+			.seccion5 iframe, .seccion5 img{
+			width: 170px;
+			height: 250px;
+			}
+
+			.seccion5 .imagenes{
+				width: 170px;
+				height: 120px;
+			}
+
+			.seccion6 iframe, .seccion6 img{
+				width: 170px;
+				height: 110px;
+			}
+
+		}
+
+		@media (max-width: 670px){
+
+			.seccion1{
+				background-image: url('Imágenes para fondo/fondoordenador2.png');
+				height: 80vh;
+			}
+
+			h1{
+				font-size: 30px;
+			}
+
+			.title{
+				font-size: 30px;
+			}
+
+			.seccion2 img{
+				width: 360px;
+				height: 380px;
+			}
+
+			.textoseccion2 img{
+				width: 40px;
+				height: auto;
+			}
+
+			/*OTRAS SECCIONES*/
+
+			.seccion4 iframe, .seccion4 img{
+				width: 150px;
+				height: 90px;
+			}
+
+			.seccion5 iframe, .seccion5 img{
+			width: 150px;
+			height: 210px;
+			}
+
+			.seccion5 .imagenes{
+				width: 150px;
+				height: 100px;
+			}
+
+			.seccion6 iframe, .seccion6 img{
+				width: 150px;
+				height: 90px;
+			}
+		}
+
+		@media (max-width: 564px){
+
+			/*OTRAS SECCIONES*/
+
+			.seccion4 iframe, .seccion4 img{
+				width: 130px;
+				height: 80px;
+			}
+
+			.seccion5 iframe, .seccion5 img{
+			width: 130px;
+			height: 180px;
+			}
+
+			.seccion5 .imagenes{
+				width: 130px;
+				height: 90px;
+			}
+
+			.seccion6 iframe, .seccion6 img{
+				width: 130px;
+				height: 80px;
+			}
+
+			/*FOOTER*/
+
+			footer{
+				font-size: 12px;
+			}
+
+			.separacionfooter{
+				width: 400px;
+			}
+
+			.formulario{
+				width: 250px;
+				height: 25px;
+				font-size: 12px;
+				padding-left: 10px;
+			}
+
+			i{
+				font-size: 24px;
+				/*width: 300px;*/
+				padding: 5px 0;
+			}
+
+			.boton{
+				width: 70px;
+				height: 25px;
+				font-size: 10px;
+			}
+		}
+
+		/*RESPONSIVE MOVIL*/
+
+		@media (max-width: 490px){
+
+			h1{
+				font-size: 28px;
+				padding: 10px 0; 
+				padding-top: 20px;
+			}
+
+			/*HEADER*/
+
+			.menu{
+				font-size: 25px;
+				margin-top: 22px;
+			}
+
+			header a{
+				margin-left: 15px;
+			}
+
+			/*PRIMERA SECCION*/
+
+			.seccion1{
+				background-image: url('Imágenes para fondo/fondoparamovilDEF.png');
+				height: 80vh;
+			}
+
+			/*SEGUNDA SECCION*/
+
+			.seccion2 img{
+				width: 200px;
+				height: 220px;
+			}
+
+			.seccion2 div{
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.textoseccion2 p{
+				font-size: 13px;
+			}
+
+			.textoseccion2 img{
+				width: 35px;
+				height: auto;
+			}
+
+			/*TERCERA SECCION*/
+
+			.container__slider{
+				max-width: 420px;
+				height: 200px;
+			}
+
+			.card button{
+				width: 80px;
+				height: 25px;
+				font-size: 13px;
+			}
+
+			.card p{
+				font-size: 15px;
+			}
+
+			
+
+		}
+
+		@media (max-width: 426px){
+
+			/*OTRAS SECCIONES*/
+
+			.seccion4 iframe, .seccion4 img{
+				width: 150px;
+				height: 100px;
+			}
+
+			.seccion5 iframe, .seccion5 img{
+			width: 150px;
+			height: 210px;
+			}
+
+			.seccion5 .imagenes{
+				width: 150px;
+				height: 110px;
+			}
+
+			.seccion6 iframe, .seccion6 img{
+				width: 150px;
+				height: 100px;
+			}
+
+			/*FOOTER*/
+
+			footer{
+				font-size: 10px;
+			}
+
+			.separacionfooter{
+				width: 280px;
+			}
+
+			.formulario{
+				width: 250px;
+				height: 25px;
+				font-size: 10px;
+				padding-left: 10px;
+			}
+
+			i{
+				font-size: 18px;
+				width: 35px;
+				padding: 0;
+				text-align: center;
+			}
+
+			.boton{
+				width: 70px;
+				height: 25px;
+				font-size: 10px;
+			}
+		}
+
+		@media (max-width: 376px){
+
+			.imagenheader{
+				height: 8vh;
+				margin-bottom: 10px;
+			}
+
+			.panelfijo{
+				height: 7vh;
+				padding: 0 12px;
+			}
+
+			.menu{
+				font-size: 18px;
+				margin-top: 18px;
+			}
+
+			/*OTRAS SECCIONES*/
+
+			.seccion4 iframe, .seccion4 img{
+				width: 130px;
+				height: 90px;
+			}
+
+			.seccion5 iframe, .seccion5 img{
+			width: 130px;
+			height: 180px;
+			}
+
+			.seccion5 .imagenes{
+				width: 130px;
+				height: 100px;
+			}
+
+			.seccion6 iframe, .seccion6 img{
+				width: 130px;
+				height: 90px;
+			}
+
+			i{
+				width: 30px;
+			}
+		}
+
+		@media (max-width: 321px){
+
+			.menu{
+				font-size: 12px;
+				margin-top: 30px;
+			}
+
+			h1{
+				font-size: 20px;
+			}
+
+			/*FOOTER*/
+
+			footer{
+				font-size: 10px;
+			}
+
+			.separacionfooter{
+				width: 200px;
+			}
+
+			.formulario{
+				width: 200px;
+				height: 25px;
+				font-size: 10px;
+				padding-left: 10px;
+			}
+
+			i{
+				font-size: 15px;
+				width: 20px;
+				padding: 0;
+				text-align: center;
+			}
+
+			.boton{
+				width: 70px;
+				height: 25px;
+				font-size: 10px;
+			}
+		}
+
+	</style>
+
+
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="panelfijo">
+				<img src="fotos propias/logoenblanco.png" class="imagenheader">
+				<div class="menu">
+					<a href="#sobremi">Sobre mí</a>
+					<a href="#galeria">Galería</a>
+					<a href="#contacto">Contacto</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<section class="seccion1">
+		<!-- <img src="Imágenes para fondo/fondoordenador.jpg" alt=""> -->
+	</section>
+
+	<hr>
+
+	<section class="seccion2" id="sobremi">
+		<h1>SOBRE MÍ</h1>
+		<div>
+			<img src="fotos propias/foto.jpg">
+			<div class="textoseccion2">
+				<p>Soy Mari Carmen San José Gutiérrez, una muchacha proveniente de Sevilla. Estoy cursando el grado superior de animación 3d y entornos interactivos.</br>
+				Mi pasión es dibujar y plasmar mis ideas de distintas formas, por ello estoy estudiando esto. En estos años he aprendido a modelar, animar e incluso a editar. En este año estoy aprendiendo a programar.</br>
+				Algunas de mis habilidades es modelar, dibujar y editar, aunque también me gusta animar.</br>
+				Me gusta lo que hago y me divierto haciendolo. Os dejo algunos proyectos para que podáis ver mi nivel.</br></br>
+				APLICACIONES QUE MANEJO</br></br>
+				<img src="Imágenes para fondo/premier.png">
+				<img src="Imágenes para fondo/blender.png">
+				<img src="Imágenes para fondo/photoshop.png"></p>
+
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
+	<section class="seccion3" id="galeria">
+		<h1 class="title">GALERÍA</h1>
+	    <div class="container__slider">
+
+	        <div class="container">
+	            <input type="radio" name="slider" id="item-1" checked>
+	            <input type="radio" name="slider" id="item-2">
+	            <input type="radio" name="slider" id="item-3">
+
+	            <div class="cards">
+	                <label class="card" for="item-1" id="selector-1">
+	                    <img src="modelado y color/flor/floresconcesped.png">
+	                    <p>MODELADO Y COLOR</p>
+	                    <button><a href="#modelado">Ver más</a></button>
+	                </label>
+	                <label class="card" for="item-2" id="selector-2">
+	                    <img src="dibujos y pinturas/dibujopaisajes/sanjose_maricarmen_paisaje copia.jpg">
+	                    <p>DIBUJOS Y PINTURAS</p>
+	                    <button><a href="#dibujos">Ver más</a></button>
+	                </label>
+	                <label class="card" for="item-3" id="selector-3">
+	                    <img src="animacion/pelotaplaya.png">
+	                    <p>ANIMACIÓN</p>
+	                    <button><a href="#animacion">Ver más</a></button>
+	                </label>
+
+	            </div>
+	        </div>
+
+	    </div>
+	</section>
+
+	<hr>
+
+	<section class="seccion4" id="modelado">
+
+		<h1>MODELADO Y COLOR</h1>
+
+		<div>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/WTcs0KbsgC0?si=J-rGWLTl_fHgHzXx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+			<a href="modelado y color/bebe gitana/sanjose_maricarmen_muñeca.png" data-lightbox="galeria" data-title="Primera muñeca modelada">
+				<img src="modelado y color/bebe gitana/sanjose_maricarmen_muñeca.png">
+			</a>
+
+			<a href="modelado y color/bebe gitana/sanjose_maricarmen_muñeca1.png" data-lightbox="galeria" data-title="Primera muñeca modelada">
+				<img src="modelado y color/bebe gitana/sanjose_maricarmen_muñeca1.png">
+			</a>
+
+			<a href="modelado y color/dado (cambiar)/sanjosegutierrez_maricarmen_dado.png" data-lightbox="galeria" data-title="Dado modelado">
+				<img src="modelado y color/dado (cambiar)/sanjosegutierrez_maricarmen_dado.png">
+			</a>
+
+			<a href="modelado y color/monos supernenas/sanjosegutierrez_maricarmen_mono.png" data-lightbox="galeria" data-title="Monos supernenas">
+				<img src="modelado y color/monos supernenas/sanjosegutierrez_maricarmen_mono.png">
+			</a>
+
+			<a href="modelado y color/isla low poly/sanjosegutierrez_maricarmen_isla.png" data-lightbox="galeria" data-title="Isla low poly">
+				<img src="modelado y color/isla low poly/sanjosegutierrez_maricarmen_isla.png">
+			</a>
+
+			<a href="modelado y color/isla low poly/sanjosegutierrez_maricarmen_isla2.png" data-lightbox="galeria" data-title="Isla low poly">
+				<img src="modelado y color/isla low poly/sanjosegutierrez_maricarmen_isla2.png">
+			</a>
+
+			<a href="modelado y color/isla low poly/sanjosegutierrez_maricarmen_isla3.png" data-lightbox="galeria" data-title="Isla low poly">
+				<img src="modelado y color/isla low poly/sanjosegutierrez_maricarmen_isla3.png">
+			</a>
+
+			<a href="modelado y color/isla low poly/sanjosegutierrez_maricarmen_isla4.png" data-lightbox="galeria" data-title="Isla low poly">
+				<img src="modelado y color/isla low poly/sanjosegutierrez_maricarmen_isla4.png">
+			</a>
+
+			<a href="modelado y color/isla low poly/sanjosegutierrez_maricarmen_isla5.png" data-lightbox="galeria" data-title="Isla low poly">
+				<img src="modelado y color/isla low poly/sanjosegutierrez_maricarmen_isla5.png">
+			</a>
+
+			<a href="modelado y color/isla low poly/sanjosegutierrez_maricarmen_isla6.png" data-lightbox="galeria" data-title="Isla low poly">
+				<img src="modelado y color/isla low poly/sanjosegutierrez_maricarmen_isla6.png">
+			</a>
+
+			<a href="modelado y color/flor/floraguaperfil.jpg" data-lightbox="galeria" data-title="Flor en agua">
+				<img src="modelado y color/flor/floraguaperfil.jpg">
+			</a>
+
+			<a href="modelado y color/flor/floraguaarriba.jpg" data-lightbox="galeria" data-title="Flor en agua">
+				<img src="modelado y color/flor/floraguaarriba.jpg">
+			</a>
+
+			<a href="modelado y color/flor/floresconcesped.png" data-lightbox="galeria" data-title="Flor">
+				<img src="modelado y color/flor/floresconcesped.png">
+			</a>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/s3GTkeK6sMA?si=X6OOJreyDNzHfrJD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+			<a href="modelado y color/martillo/martillo.png" data-lightbox="galeria" data-title="Martillo">
+				<img src="modelado y color/martillo/martillo.png">
+			</a>
+
+			<a href="modelado y color/martillo/sanjosegutierrez_maricarmen_martillo.png" data-lightbox="galeria" data-title="Martillo">
+				<img src="modelado y color/martillo/sanjosegutierrez_maricarmen_martillo.png">
+			</a>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/yfQU5wq1dFo?si=NrD3W3yKkjrU0qEl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+			<a href="modelado y color/muñeca arcane/muñecaarcane.png" data-lightbox="galeria" data-title="Muñeca estilo arcane">
+				<img src="modelado y color/muñeca arcane/muñecaarcane.png">
+			</a>
+
+			<a href="modelado y color/muñeca arcane/muñecaarcane1.png" data-lightbox="galeria" data-title="Muñeca estilo arcane">
+				<img src="modelado y color/muñeca arcane/muñecaarcane1.png">
+			</a>
+
+		</div>
+	</section>
+
+	<hr>
+
+	<section class="seccion5" id="dibujos">
+
+		<h1>DIBUJOS Y PINTURAS</h1>
+
+		<div>
+
+			<a href="dibujos y pinturas/dibujos a lapiz/nariz.jpg" data-lightbox="galeria" data-title="Dibujo nariz">
+				<img src="dibujos y pinturas/dibujos a lapiz/nariz.jpg">
+			</a>
+
+			<a href="dibujos y pinturas/dibujos a lapiz/cara.jpg" data-lightbox="galeria" data-title="Dibujo cara">
+				<img src="dibujos y pinturas/dibujos a lapiz/cara.jpg">
+			</a>
+
+			<a href="dibujos y pinturas/dibujos a lapiz/mar.JPG" data-lightbox="galeria" data-title="Dibujo mar">
+				<img src="dibujos y pinturas/dibujos a lapiz/mar.JPG">
+			</a>
+
+			<a href="dibujos y pinturas/dibujos a lapiz/pingui.jpg" data-lightbox="galeria" data-title="Dibujo pingüino">
+				<img src="dibujos y pinturas/dibujos a lapiz/pingui.jpg">
+			</a>
+
+			<a href="dibujos y pinturas/dibujos a lapiz/bombilla.jpg" data-lightbox="galeria" data-title="Dibujo bombilla con barco">
+				<img src="dibujos y pinturas/dibujos a lapiz/bombilla.jpg">
+			</a>
+
+			<a href="dibujos y pinturas/dibujos a lapiz/bob esponja.jpg" data-lightbox="galeria" data-title="Dibujo Bob Esponja">
+				<img src="dibujos y pinturas/dibujos a lapiz/bob esponja.jpg">
+			</a>
+
+			<a href="dibujos y pinturas/dibujos a lapiz/groot.jpg" data-lightbox="galeria" data-title="Dibujo Groot">
+				<img src="dibujos y pinturas/dibujos a lapiz/groot.jpg">
+			</a>
+
+			<a href="dibujos y pinturas/dibujos a lapiz/reloj.jpg" data-lightbox="galeria" data-title="Dibujo reloj deteriorado">
+				<img src="dibujos y pinturas/dibujos a lapiz/reloj.jpg">
+			</a>
+
+			<a href="dibujos y pinturas/dibujos a lapiz/retrato.jpg" data-lightbox="galeria" data-title="Boceto autorretrato">
+				<img src="dibujos y pinturas/dibujos a lapiz/retrato.jpg">
+			</a>
+
+			<a href="dibujos y pinturas/dibujos a lapiz/medusa.JPG" data-lightbox="galeria" data-title="Dibujo diosa Medusa">
+				<img src="dibujos y pinturas/dibujos a lapiz/medusa.JPG">
+			</a>
+
+			<a href="dibujos y pinturas/dibujos a lapiz/daki.JPGg" data-lightbox="galeria" data-title="Dibujo Daki">
+				<img src="dibujos y pinturas/dibujos a lapiz/daki.JPG">
+			</a>
+
+			<a href="dibujos y pinturas/dibujos a lapiz/cuadro.jpg" data-lightbox="galeria" data-title="Dibujo cuadro Real Madrid y Valladolid">
+				<img src="dibujos y pinturas/dibujos a lapiz/cuadro.jpg">
+			</a>
+
+			<a href="dibujos y pinturas/perspectivas habitacion/isométrico.png" data-lightbox="galeria" data-title="Perspectiva isométrica habitacion">
+				<img src="dibujos y pinturas/perspectivas habitacion/isométrico.png" class="imagenes">
+			</a>
+
+			<a href="dibujos y pinturas/perspectivas habitacion/cónica oblicua.png" data-lightbox="galeria" data-title="Perspectiva cónica oblicua habitacion">
+				<img src="dibujos y pinturas/perspectivas habitacion/cónica oblicua.png" class="imagenes">
+			</a>
+
+			<a href="dibujos y pinturas/perspectivas habitacion/cónica frontal.png" data-lightbox="galeria" data-title="Perspectiva cónica frontal habitacion">
+				<img src="dibujos y pinturas/perspectivas habitacion/cónica frontal.png" class="imagenes">
+			</a>
+
+			<a href="dibujos y pinturas/dibujopaisajes/sanjose_maricarmen_paisaje copia.jpg" data-lightbox="galeria" data-title="Paisaje">
+				<img src="dibujos y pinturas/dibujopaisajes/sanjose_maricarmen_paisaje copia.jpg" class="imagenes">
+			</a>
+
+			<a href="dibujos y pinturas/biblia de personajes/construccion.png" data-lightbox="galeria" data-title="Construcción de personaje">
+				<img src="dibujos y pinturas/biblia de personajes/construccion.png" class="imagenes">
+			</a>
+
+			<a href="dibujos y pinturas/biblia de personajes/Colores.png" data-lightbox="galeria" data-title="Color personaje">
+				<img src="dibujos y pinturas/biblia de personajes/Colores.png" class="imagenes">
+			</a>
+
+			<a href="dibujos y pinturas/elementos 2d/elementos.gif" data-lightbox="galeria" data-title="Elementos en 2d">
+				<img src="dibujos y pinturas/elementos 2d/elementos.gif" class="imagenes">
+			</a>
+
+			<a href="dibujos y pinturas/elementos 2d/sanjose_maricarmen_NIEVE.gif" data-lightbox="galeria" data-title="Nieve en 2d">
+				<img src="dibujos y pinturas/elementos 2d/sanjose_maricarmen_NIEVE.gif" class="imagenes">
+			</a>
+
+		</div>
+	</section>
+
+	<hr>
+
+	<section class="seccion6" id="animacion">
+
+		<h1>ANIMACIÓN</h1>
+
+		<div>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/SFmyTA22MGU?si=rCb1Zn_dO1I0P28d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/aJM-WA3oh0E?si=QXc4C9wHGMAkgyAe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/w7iM-uqSEJ0?si=LRG2bdaZjrQivtKi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/rl938D4Nh6Q?si=jIvDQT8_00d9ysHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/dwbRo3smgRg?si=ZYFUNYkHrhMCcK7n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/uv7JUdwDcc8?si=lYREm8d_61r6gGM3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/4N2LQ_CMSYk?si=OWnRGJlAlmkU-DZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/-pzrEU2BxTs?si=gqVw1kUrgGDuaIg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+		</div>
+	</section>
+
+	<hr>
+
+	<footer id="contacto">
+		<div>
+			<h1>CONTACTA CONMIGO</h1>
+			<p>Déjame tu email para poder hablar contigo</p>
+			<form action="/action_page.php">
+			  <label for="fname">Nombre:</label><br>
+			  <input type="text" id="fname" name="fname" value="Nombre" class="formulario"><br><br>
+			  <label for="lname">Apellidos:</label><br>
+			  <input type="text" id="lname" name="lname" value="Apellidos" class="formulario"><br><br>
+			  <label for="lname">Email:</label><br>
+			  <input type="text" id="mname" name="mname" value="Email" class="formulario"><br><br>
+			  
+			  <input type="checkbox" id="vehicle1" name="vehicle1" value="Política">
+			  <label for="vehicle1"> Acepto las políticas de privacidad</label><br>
+			  <input type="checkbox" id="vehicle2" name="vehicle2" value="Notificaciones">
+			  <label for="vehicle2"> Quiero recibir notificaciones</label><br><br>
+			  <input type="submit" value="Enviar" class="boton">
+			</form> 
+		</div>
+		<hr class="separacionfooter">
+		<div>
+			<a href="https://x.com/mariic21" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+			<a href="https://www.instagram.com/mcsanjog" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://mail.google.com/mail/?view=cm&fs=1&to=mcsanjog21@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+			<a href="https://www.tiktok.com/@maric21" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+			<a href="https://wa.me/34661682929" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-1.7.2.js" integrity="sha256-FxfqH96M63WENBok78hchTCDxmChGFlo+/lFIPcZPeI=" crossorigin="anonymous"></script>
+	<script src="lightbox2-2.11.3/src/js/lightbox.js"></script>
+</body>
+</html>
